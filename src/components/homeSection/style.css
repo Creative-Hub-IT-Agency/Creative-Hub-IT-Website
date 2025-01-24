@@ -1,0 +1,15 @@
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .rotating-frame {
+    animation: rotate 10s linear infinite; /* 10s for smooth rotation */
+  }
+  .clip-custom-shape {
+    clip-path: polygon(0% 10%, 80% 0%, 100% 20%, 100% 90%, 20% 100%, 0% 80%);
+}
