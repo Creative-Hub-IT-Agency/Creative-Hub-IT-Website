@@ -18,3 +18,18 @@ html {
 }
 
 
+@layer base {
+  button {
+    background-color: #8FDC24;
+  }
+}
+
+@layer components {
+  button {
+    background-color: #8FDC24;
+  
+  }
+  button:hover{
+    background-color: #84cc16;
+  }
+}
