@@ -9,6 +9,8 @@ import Tagline from "../components/homeSection/Tagline";
 import Testimonials from "../components/homeSection/Testimonials";
 import Consultation from "../components/shared/hero/Consultation";
 import WhyChoose from "../components/shared/hero/WhyChoose";
+import PortfolioSection from "../components/PortfolioSection";
+import AnimatedBanner from "../components/AnimatedBanner";
 
 export default function Home() {
   useEffect(() => {
@@ -18,6 +20,8 @@ export default function Home() {
     <div>
       <Banner />
       <Introduction />
+      <AnimatedBanner />
+      <PortfolioSection />
       <Services />
       <Tagline />
       <ProjectSlider />
