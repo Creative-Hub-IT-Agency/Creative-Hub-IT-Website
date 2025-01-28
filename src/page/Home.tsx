@@ -15,7 +15,7 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="bg-black">
+    <div>
       <Banner />
       <Introduction />
       <Services />

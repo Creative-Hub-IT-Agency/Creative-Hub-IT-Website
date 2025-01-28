@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './../../assets/Images/webLogo/logo.png';
+import logo from '/logo.png';
 import AppointmentButton from '../AppointmentButton';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
