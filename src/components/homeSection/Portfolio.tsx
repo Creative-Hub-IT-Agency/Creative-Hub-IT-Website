@@ -7,7 +7,11 @@ import Portfolio03 from '../../assets/Images/portfolio/portfolio03.png';
 import Portfolio04 from '../../assets/Images/portfolio/porfolio04.png';
 import Portfolio05 from '../../assets/Images/portfolio/portfolio05.png';
 import Portfolio06 from '../../assets/Images/portfolio/portfolio06.png';
+<<<<<<< HEAD
+import PrimaryButton from '../shared/PrimaryButton';
+=======
 // import limeButton from '../shared/limeButton';
+>>>>>>> 472c325e1822bce56321e1b4f16363bf1e4ab932
 
 const Portfolio = () => {
   // Use imported images in the array
@@ -43,7 +47,11 @@ const Portfolio = () => {
 
       <Slider web={webPort} app={appPort} />
       <div className='max-w-[1400px] mx-auto text-center flex justify-center items-center mt-[50px]'>
+<<<<<<< HEAD
+        <PrimaryButton text='View all portfolios' />
+=======
         {/* <limeButton text='View all portfolios' /> */}
+>>>>>>> 472c325e1822bce56321e1b4f16363bf1e4ab932
       </div>
     </div>
   );

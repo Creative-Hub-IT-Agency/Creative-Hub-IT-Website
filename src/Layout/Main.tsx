@@ -6,12 +6,14 @@ import WhatsappButton from "../components/WhatsappButton";
 
 export default function Main() {
   return (
-    <>
-    <WhatsappButton/>
-    {/* <LiveChatButton/> */}
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
-  )
+    <div className='bg-black'>
+      <div className='container mx-auto px-4 lg:px-8'>
+        <WhatsappButton />
+        {/* <LiveChatButton/> */}
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </div>
+  );
 }
