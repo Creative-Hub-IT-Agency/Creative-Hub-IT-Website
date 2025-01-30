@@ -3,7 +3,7 @@ import './style.css';
 import { Link } from 'react-router-dom';
 
 const heroStyles = {
-  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/banner.webp')`,
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/banner.webp')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
@@ -31,7 +31,7 @@ const Banner = () => {
         {/* Content */}
         <div className=' z-10 max-w-[1400px] text-center mx-auto'>
           <div>
-            <h3 className='uppercase tracking-[12px] text-2xl font-semibold mb-6   '>
+            <h3 className='uppercase tracking-[12px] text-2xl font-bold mb-6   '>
               welcome to
             </h3>
             <h1 className='text-4xl md:text-6xl lg:text-8xl uppercase  font-extrabold mb-6 font-poppins '>

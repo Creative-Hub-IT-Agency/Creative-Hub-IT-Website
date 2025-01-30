@@ -1,7 +1,47 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '/logo.png';
 import AppointmentButton from '../AppointmentButton';
+
+
+export const NavLinks = () => {
+  return (
+    <ul className='flex flex-col lg:flex-row justify-center items-center space-y-4 space-x-8 text-white uppercase'>
+      <li>
+        <NavLink to='/' className='hover:text-lime font-medium'>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/services' className='hover:text-lime font-medium'>
+          Services
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink to='/portfolio' className='hover:text-lime font-medium'>
+          portfolio
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/about' className='hover:text-lime font-medium'>
+          about
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/our-team' className='hover:text-lime font-medium'>
+          our team
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to='/contact' className='hover:text-lime font-medium'>
+          Contact
+        </NavLink>
+      </li>
+    </ul>
+  );
+}
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -10,13 +50,16 @@ export default function Navbar() {
       <div className='max-w-[1400px]  mx-auto flex items-center justify-between'>
         {/* Logo */}
         <div className='text-white font-bold text-xl'>
-          <Link to='/'>
+          <NavLink to='/'>
             <img className='h-[60px]' src={logo} alt='creative logo ' />
-          </Link>
+          </NavLink>
         </div>
 
         {/* Navigation Links for Desktop */}
-        <ul className='hidden md:flex space-x-8 text-white'>
+        <div className='hidden lg:flex'>
+          <NavLinks />
+        </div>
+        {/* <ul className='hidden lg:flex space-x-8 text-white'>
           <li>
             <a href='/' className='hover:text-lime text-lg font-medium'>
               Home
@@ -24,7 +67,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href='/#about' className='hover:text-lime text-lg font-medium'>
-              About
+              Services
             </a>
           </li>
 
@@ -33,7 +76,7 @@ export default function Navbar() {
               href='/#services'
               className='hover:text-lime text-lg font-medium'
             >
-              Services
+              portfolio
             </a>
           </li>
           <li>
@@ -41,7 +84,7 @@ export default function Navbar() {
               href='/#portfolio'
               className='hover:text-lime text-lg font-medium'
             >
-              Portfolio
+              about
             </a>
           </li>
           <li>
@@ -49,24 +92,24 @@ export default function Navbar() {
               href='/#testimonials'
               className='hover:text-lime text-lg font-medium'
             >
-              testimonials
+              our team
             </a>
           </li>
           <li>
-            <Link to='/contact' className='hover:text-lime text-lg font-medium'>
+            <NavLink to='/contact' className='hover:text-lime text-lg font-medium'>
               Contact
-            </Link>
+            </NavLink>
           </li>
-        </ul>
+        </ul> */}
 
         {/* Consultant Button */}
-        <div className='hidden md:block'>
+        <div className='hidden lg:block'>
           <AppointmentButton>Book a free Consultation</AppointmentButton>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className='md:hidden text-white focus:outline-none'
+          className='lg:hidden text-white focus:outline-none'
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -91,7 +134,7 @@ export default function Navbar() {
 
       {/* Fullscreen Mobile Menu */}
       {isMenuOpen && (
-        <div className='fixed inset-0 bg-navbar-bg z-50 flex flex-col space-y-8 items-center justify-center text-white'>
+        <div className='fixed inset-0 bg-navbar-bg z-50 flex flex-col space-y-8 items-center justify-center w-3/4 text-white'>
           <button
             className='absolute top-5 right-5 text-white focus:outline-none'
             onClick={() => setIsMenuOpen(false)}
@@ -111,48 +154,55 @@ export default function Navbar() {
               ></path>
             </svg>
           </button>
-          <a
-            href='/'
-            className='text-2xl hover:text-lime'
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </a>
-          <a
-            href='#about'
-            className='text-2xl hover:text-lime'
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </a>
-          <a
-            href='#services'
-            className='text-2xl hover:text-lime'
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </a>
-          <a
-            href='#portfolio'
-            className='text-2xl hover:text-lime'
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Portfolio
-          </a>
-          <a
-            href='/contact'
-            className='text-2xl hover:text-lime'
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </a>
-          <Link
+          <div className=' lg:hidden'>
+            <NavLinks />
+          </div>
+
+          <div className='hidden'>
+            <a
+              href='/'
+              className='text-2xl hover:text-lime'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href='#about'
+              className='text-2xl hover:text-lime'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </a>
+            <a
+              href='#services'
+              className='text-2xl hover:text-lime'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Services
+            </a>
+            <a
+              href='#portfolio'
+              className='text-2xl hover:text-lime'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portfolio
+            </a>
+            <a
+              href='/contact'
+              className='text-2xl hover:text-lime'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
+          </div>
+
+          <NavLink
             to='#'
             className='bg-lime text-white py-2 px-4 rounded hover:bg-deep-lime transition'
             onClick={() => setIsMenuOpen(false)}
           >
             Book a free consultation
-          </Link>
+          </NavLink>
         </div>
       )}
     </nav>
