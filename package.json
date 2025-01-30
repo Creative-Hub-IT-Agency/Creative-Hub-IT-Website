@@ -11,11 +11,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-<<<<<<< HEAD
+
     "clsx": "^2.1.1",
-=======
     "framer-motion": "^12.0.5",
->>>>>>> 472c325e1822bce56321e1b4f16363bf1e4ab932
     "react": "^18.3.1",
     "react-calendly": "^4.3.1",
     "react-dom": "^18.3.1",
