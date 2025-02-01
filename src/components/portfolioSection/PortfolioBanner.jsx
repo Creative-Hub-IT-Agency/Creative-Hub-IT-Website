@@ -1,4 +1,4 @@
-import FlipWords from '../portfolioSection/FlipWords';
+import FlipWords from '../FlipWords';
 import './style.css';
 import { Link } from 'react-router-dom';
 
@@ -16,8 +16,7 @@ const words = [
   'Troubleshooting, Debugging and Bug Fixing',
 ];
 
-const Banner = () => {
-
+const PortfolioBanner = () => {
   return (
     <div
       id='#home'
@@ -25,8 +24,6 @@ const Banner = () => {
       style={heroStyles}
     >
       <div>
-  
-
         {/* Content */}
         <div className=' z-10 max-w-[1400px] text-center mx-auto'>
           <div>
@@ -57,4 +54,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default PortfolioBanner;

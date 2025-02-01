@@ -2,7 +2,7 @@ import Marquee from 'react-fast-marquee';
 
 const AnimatedBanner = () => {
     return (
-      <div className='relative text-white overflow-hidden pt-16 h-96'>
+      <div className='relative text-white overflow-hidden mt-20 pt-16 h-96'>
         {/* first one */}
         <div style={{ transform: 'rotate(6deg)' }}>
           <Marquee direction='right'>
