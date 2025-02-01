@@ -6,6 +6,7 @@ import DeveloperTeam from "../components/TeamSection/DeveloperTeam"
 import UiUXTeam from "../components/TeamSection/UiUXTeam"
 import MarketingTeam from "../components/TeamSection/MarketingTeam"
 import NewsletterSection from "../components/TeamSection/NewsletterSection"
+import ConsultationSection from "../components/TeamSection/ConsultationSection"
 
 const OurTeam = () => {
   const slider_text = ['+', 'DESIGN', '+', 'WEB DEVELOPMENT', '+', 'BRANDING']
@@ -32,6 +33,7 @@ const OurTeam = () => {
           <MarketingTeam />
         </div>
         <NewsletterSection />
+        <ConsultationSection />
       </div>
     </div>
   )
