@@ -17,7 +17,8 @@ export default {
         'deep-lime': '#79BA16',
         'navbar-bg': '#131415',
         main_color: '#222',
-        active_color: '#E02166'
+        active_color: '#E02166',
+        light: '#FFF'
       },
     },
   },
