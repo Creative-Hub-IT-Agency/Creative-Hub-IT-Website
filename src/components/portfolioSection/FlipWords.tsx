@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { cn } from '../../lib/utils';
+import { cn } from '../../../lib/utils';
 
 const FlipWords = ({
   words,
@@ -22,7 +22,7 @@ const FlipWords = ({
 
   return (
     <div
-      className='relative overflow-hidden h-[3rem] tracking-wider'
+      className=' relative overflow-hidden h-[3rem] tracking-wider'
       role='text'
       aria-live='polite'
     >
