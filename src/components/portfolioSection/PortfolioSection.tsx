@@ -4,7 +4,7 @@ import { cn } from '../lib/utils';
 
 export default function PortfolioSection() {
   return (
-    <div className='max-w-[1200px] mx-auto font-poppins mb-28'>
+    <div id='portfolio' className='max-w-[1200px] mx-auto font-poppins mb-28'>
       <h1 className='text-white text-4xl font-bold'>Our Portfolio</h1>
       <p className='text-white w-1/2 my-4'>
         At Creative Hub, our portfolio is a reflection of the impactful work we

@@ -22,7 +22,7 @@ const FlipWords = ({
 
   return (
     <div
-      className='relative overflow-hidden h-[3rem] tracking-wider'
+      className=' relative overflow-hidden h-[3rem] tracking-wider'
       role='text'
       aria-live='polite'
     >
