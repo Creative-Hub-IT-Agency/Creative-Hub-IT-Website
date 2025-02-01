@@ -8,6 +8,11 @@ export const NavLinks = () => {
   return (
     <ul className='flex flex-col lg:flex-row justify-start lg:justify-center lg:items-center space-y-4 space-x-8 text-white uppercase'>
       <li>
+        <NavLink to='/' className='hidden hover:text-lime font-medium ml-[30px] lg:ml-0 '>
+          Home
+        </NavLink>
+      </li>
+      <li>
         <NavLink to='/' className='hover:text-lime font-medium ml-[30px] lg:ml-0 '>
           Home
         </NavLink>
