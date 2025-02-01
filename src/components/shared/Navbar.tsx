@@ -8,6 +8,11 @@ export const NavLinks = () => {
   return (
     <ul className='flex flex-col lg:flex-row justify-start lg:justify-center lg:items-center space-y-4 space-x-8 text-white uppercase'>
       <li>
+        <NavLink to='/' className='hidden hover:text-lime font-medium ml-[30px] lg:ml-0 '>
+          Home
+        </NavLink>
+      </li>
+      <li>
         <NavLink to='/' className='hover:text-lime font-medium ml-[30px] lg:ml-0 '>
           Home
         </NavLink>
@@ -47,11 +52,11 @@ export default function Navbar() {
 
   return (
     <nav className='bg-navbar-bg sticky top-0 py-5 px-6 z-20'>
-      <div className='max-w-[1400px]  mx-auto flex items-center justify-between'>
+      <div className=' flex items-center justify-between'>
         {/* Logo */}
         <div className='text-white font-bold text-xl'>
           <NavLink to='/'>
-            <img className='h-[60px]' src={logo} alt='creative logo ' />
+            <img className='h-16' src={logo} alt='Creative Hub IT Agency Logo ' />
           </NavLink>
         </div>
 

@@ -60,7 +60,7 @@ const Banner = () => {
             </p>
             <Link
               to='./contact'
-              className='bg-primary uppercase   hover:bg-lime-500 hover:bg-opacity-90 transition transform hover:scale-105  text-white hover:primary-light font-medium py-5 px-12 rounded-full'
+              className='bg-lime uppercase   hover:bg-deep-lime-500 hover:bg-opacity-90 transition transform hover:scale-105  text-white hover:primary-light font-medium py-5 px-12 rounded-full'
             >
               Get Started
             </Link>
