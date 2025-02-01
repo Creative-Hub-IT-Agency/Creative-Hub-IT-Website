@@ -6,9 +6,9 @@ import AppointmentButton from '../AppointmentButton';
 
 export const NavLinks = () => {
   return (
-    <ul className='flex flex-col lg:flex-row justify-center items-center space-y-4 space-x-8 text-white uppercase'>
+    <ul className='flex flex-col lg:flex-row justify-start lg:justify-center lg:items-center space-y-4 space-x-8 text-white uppercase'>
       <li>
-        <NavLink to='/' className='hover:text-lime font-medium'>
+        <NavLink to='/' className='hover:text-lime font-medium ml-[30px] lg:ml-0 '>
           Home
         </NavLink>
       </li>
@@ -134,7 +134,7 @@ export default function Navbar() {
 
       {/* Fullscreen Mobile Menu */}
       {isMenuOpen && (
-        <div className='fixed inset-0 bg-navbar-bg z-50 flex flex-col space-y-8 items-center justify-center w-3/4 text-white'>
+        <div className='fixed inset-0 bg-navbar-bg z-50 flex flex-col space-y-8 items-center justify-center text-white'>
           <button
             className='absolute top-5 right-5 text-white focus:outline-none'
             onClick={() => setIsMenuOpen(false)}
