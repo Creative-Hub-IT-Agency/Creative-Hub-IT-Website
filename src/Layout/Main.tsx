@@ -11,7 +11,9 @@ export default function Main() {
         <WhatsappButton />
         {/* <LiveChatButton/> */}
         <Navbar />
-        <Outlet />
+        <div className="min-h-[90vh]">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </div>
