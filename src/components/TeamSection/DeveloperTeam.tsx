@@ -1,22 +1,25 @@
 import rashedin from "../../assets/Images/team/rashedin.png"
+import any from "../../assets/Images/team/any.jpg"
+import hisam from "../../assets/Images/team/hisam.jpg"
+import demoimg from "../../assets/Images/team/team-1-8.jpg"
 import TeamMemberSection from "./TeamMemberSection";
 
 const DeveloperTeam = () => {
     const members = [
         {
-            name: 'Rashedin Islam',
-            role: 'MERN Stack Developer',
-            image: rashedin
+            name: 'Tahamina Haq Any',
+            role: 'React Developer',
+            image: any
         },
         {
-            name: 'Rashedin Islam',
+            name: 'Demo Name',
             role: 'MERN Stack Developer',
-            image: rashedin
+            image: demoimg
         },
         {
-            name: 'Rashedin Islam',
-            role: 'MERN Stack Developer',
-            image: rashedin
+            name: 'Asaduzzaman Hisam',
+            role: 'Web Developer',
+            image: hisam
         },
     ]
     const teamLeader = {
