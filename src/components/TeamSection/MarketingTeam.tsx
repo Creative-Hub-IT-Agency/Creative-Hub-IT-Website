@@ -1,28 +1,28 @@
-import rashedin from "../../assets/Images/team/rashedin.png"
+import demoimg from "../../assets/Images/team/team-1-8.jpg"
 import TeamMemberSection from "./TeamMemberSection";
 
 const MarketingTeam = () => {
     const members = [
         {
-            name: 'Rashedin Islam',
+            name: 'Demo Name',
             role: 'MERN Stack Developer',
-            image: rashedin
+            image: demoimg
         },
         {
-            name: 'Rashedin Islam',
+            name: 'Demo Name',
             role: 'MERN Stack Developer',
-            image: rashedin
+            image: demoimg
         },
         {
-            name: 'Rashedin Islam',
+            name: 'Demo Name',
             role: 'MERN Stack Developer',
-            image: rashedin
+            image: demoimg
         },
     ]
     const teamLeader = {
-        name: 'Rashedin Islam',
+        name: 'Demo Name',
         role: 'MERN Stack Developer',
-        image: rashedin,
+        image: demoimg,
         description: 'With over 3 years of experience in full-stack development, Rashedin is the architect behind our seamless, user-friendly platforms. His problem-solving mindset ensures that our projects stay on the cutting edge of technology.',
     }
 
