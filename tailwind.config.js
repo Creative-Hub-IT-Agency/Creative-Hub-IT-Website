@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'], // Adding Poppins
         lato: ['Lato', 'sans-serif'], // Adding Lato
+        outfit: ['Outfit', 'serif']
       },
       colors: {
         black: '#131415',
@@ -15,6 +16,9 @@ export default {
         lime: '#8FDC24',
         'deep-lime': '#79BA16',
         'navbar-bg': '#131415',
+        main_color: '#222',
+        active_color: '#E02166',
+        light: '#FFF'
       },
     },
   },
