@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white container mx-auto">
       <div className="px-3 pt-[90px] pb-[10px]">
         {/* Top Footer Section */}
         <div className="max-w-[1400px] mx-auto  flex flex-col md:flex-row justify-between items-center">
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links */}
-          <ul className="flex space-x-6 text-white">
+          <ul className="flex flex-wrap items-center justify-center space-x-6 text-white">
             <li><a href="/" className="hover:text-green text-green">Home</a></li>
             <li><a href="/#about" className="hover:text-green">About</a></li>
             <li><a href="/#services" className="hover:text-green">Services</a></li>

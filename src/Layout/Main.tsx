@@ -7,7 +7,9 @@ import WhatsappButton from "../components/WhatsappButton";
 export default function Main() {
   return (
     <div className='bg-black'>
-      <div className='container mx-auto px-4 lg:px-8'>
+      <div
+        // className='container mx-auto px-4 lg:px-8'
+      >
         <WhatsappButton />
         {/* <LiveChatButton/> */}
         <Navbar />
