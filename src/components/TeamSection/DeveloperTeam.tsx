@@ -12,15 +12,15 @@ const DeveloperTeam = () => {
             image: any
         },
         {
-            name: 'Demo Name',
-            role: 'MERN Stack Developer',
-            image: demoimg
-        },
-        {
             name: 'Asaduzzaman Hisam',
             role: 'Web Developer',
             image: hisam
         },
+        {
+            name: 'Demo Name',
+            role: 'MERN Stack Developer',
+            image: demoimg
+        }
     ]
     const teamLeader = {
         name: 'Rashedin Islam',
