@@ -18,7 +18,6 @@ const words = [
 
 const Banner = () => {
 
-
   return (
     <div
       id='#home'

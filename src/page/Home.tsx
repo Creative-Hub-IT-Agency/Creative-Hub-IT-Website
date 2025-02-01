@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import Banner from "../components/homeSection/Banner";
-import BoldIdea from "../components/homeSection/BoldIdea";
-import Introduction from "../components/homeSection/Introduction";
-import Portfolio from "../components/homeSection/Portfolio";
-import ProjectSlider from "../components/homeSection/ProjectSlider";
-import Services from "../components/homeSection/Services";
-import Tagline from "../components/homeSection/Tagline";
-import Testimonials from "../components/homeSection/Testimonials";
-import Consultation from "../components/shared/hero/Consultation";
-import WhyChoose from "../components/shared/hero/WhyChoose";
-import PortfolioSection from "../components/PortfolioSection";
-import AnimatedBanner from "../components/AnimatedBanner";
+import { useEffect } from 'react';
+import Banner from '../components/homeSection/Banner';
+import BoldIdea from '../components/homeSection/BoldIdea';
+import Introduction from '../components/homeSection/Introduction';
+import Portfolio from '../components/homeSection/Portfolio';
+import ProjectSlider from '../components/homeSection/ProjectSlider';
+import Services from '../components/homeSection/Services';
+import Tagline from '../components/homeSection/Tagline';
+import Testimonials from '../components/homeSection/Testimonials';
+import Consultation from '../components/shared/hero/Consultation';
+import WhyChoose from '../components/shared/hero/WhyChoose';
+import PortfolioSection from '../components/PortfolioSection';
+import AnimatedBanner from '../components/AnimatedBanner';
 
 export default function Home() {
   useEffect(() => {
@@ -18,9 +18,9 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Banner />
-      <Introduction />
+      <Banner/>
       <AnimatedBanner />
+      <Introduction />
       <PortfolioSection />
       <Services />
       <Tagline />
@@ -31,5 +31,5 @@ export default function Home() {
       <Testimonials />
       <Consultation />
     </div>
-  )
+  );
 }
