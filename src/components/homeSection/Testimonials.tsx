@@ -2,6 +2,7 @@ import testimonialImage from '../../assets/testimonials.png';
 import aulia from '../../assets/Images/aulia.png';
 import alex from '../../assets/Images/alex.png';
 import invertComa from '../../assets/“.svg';
+import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
   return (
@@ -75,7 +76,7 @@ const Testimonials = () => {
         {/* See more button */}
         <div className='w-full md:w-1/4 flex justify-center items-center md:mt-14'>
           <button className='bg-lime hover:bg-deep-lime hover:bg-opacity-90 transition transform hover:scale-105 font-bold text-white px-5 py-4 rounded-lg md:mt-16'>
-            <p className='border-r-4 px-2 h-4 flex items-center'>See More</p>
+            <Link to="/testimonials" className='border-r-4 px-2 h-4 flex items-center'>See More</Link>
           </button>
         </div>
       </div>
