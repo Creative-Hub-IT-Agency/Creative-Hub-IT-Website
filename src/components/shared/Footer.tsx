@@ -17,10 +17,11 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <ul className="flex flex-wrap items-center justify-center space-x-6 text-white">
-            <li><a href="/" className="hover:text-green text-green">Home</a></li>
-            <li><a href="/#about" className="hover:text-green">About</a></li>
-            <li><a href="/#services" className="hover:text-green">Services</a></li>
-            <li><a href="/#portfolio" className="hover:text-green">Portfolio</a></li>
+            <li><Link to="/" className="hover:text-green text-green">Home</Link></li>
+            <li><Link to="/services" className="hover:text-green">Services</Link></li>
+            <li><Link to="/portfolio" className="hover:text-green">Portfolio</Link></li>
+            <li><Link to="/about" className="hover:text-green">About</Link></li>
+            <li><Link to="/our-team" className="hover:text-green">Our Team</Link></li>
             <li><a href="/contact" className="hover:text-green">Contact</a></li>
           </ul>
 

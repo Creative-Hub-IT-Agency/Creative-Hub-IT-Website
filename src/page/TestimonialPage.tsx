@@ -6,6 +6,7 @@ import sarah from '../assets/Images/dev1.jpg';
 import james from '../assets/Images/dev3.jpg';
 import elena from '../assets/Images/dev5.jpg';
 import david from '../assets/Images/dev6.jpg';
+import Consultation from '../components/shared/hero/Consultation';
 
 const TestimonialPage = () => {
   // Static data for testimonials
@@ -141,6 +142,7 @@ const TestimonialPage = () => {
           </motion.div>
         ))}
       </div>
+      <Consultation/>
     </div>
   );
 };
