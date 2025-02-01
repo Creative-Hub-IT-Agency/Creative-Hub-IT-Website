@@ -2,6 +2,9 @@ import HeroSection from "../components/shared/hero/HeroSection"
 import teamBackground from "../assets/Images/team/teamBackground.png"
 import AnimatedBanner2 from "../components/AnimatedBanner2"
 import TeamSection1 from "../components/TeamSection/TeamSection1"
+import DeveloperTeam from "../components/TeamSection/DeveloperTeam"
+import UiUXTeam from "../components/TeamSection/UiUXTeam"
+import MarketingTeam from "../components/TeamSection/MarketingTeam"
 
 const OurTeam = () => {
   const slider_text = ['+', 'DESIGN', '+', 'WEB DEVELOPMENT', '+', 'BRANDING']
@@ -22,6 +25,11 @@ const OurTeam = () => {
       </div>
       <div>
         <TeamSection1 />
+        <div className="space-y-[110px]">
+          <DeveloperTeam />
+          <UiUXTeam />
+          <MarketingTeam />
+        </div>
       </div>
     </div>
   )
