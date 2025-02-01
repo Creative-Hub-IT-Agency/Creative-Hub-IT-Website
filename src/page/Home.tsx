@@ -19,9 +19,7 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      <AnimatedBanner />
       <Introduction />
-      <PortfolioSection />
       <Services />
       <Tagline />
       <ProjectSlider />
