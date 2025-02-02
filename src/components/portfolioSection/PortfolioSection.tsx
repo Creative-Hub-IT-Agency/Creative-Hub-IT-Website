@@ -17,7 +17,8 @@ const portfolioData = [
   },
   {
     id: 3,
-    image: 'https://i.ibb.co.com/C8Nmpc0/31051600-grocery-shop-2-1.png',
+    image: 'https://imgur.com/scA7Euu.jpg',
+    liveLink: 'https://zirox-template.surge.sh',
   },
   {
     id: 4,
