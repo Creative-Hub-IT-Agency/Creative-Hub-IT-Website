@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import {
-  Code,
   Server,
-  Globe,
   Database,
   Layout,
   ShoppingCart,
 } from 'lucide-react';
+import { FaReact, FaShopify, FaWordpressSimple } from 'react-icons/fa';
+import { SiNextdotjs } from 'react-icons/si';
 
 const Services = () => {
   // Static data for services
@@ -39,7 +39,7 @@ const Services = () => {
       title: 'React Development',
       description:
         'Specialized in creating dynamic and interactive web applications using React ecosystem.',
-      icon: <Code className='w-10 h-10' />,
+      icon: <FaReact className='w-10 h-10' />,
       features: [
         'Custom Components',
         'State Management',
@@ -51,7 +51,7 @@ const Services = () => {
       title: 'Next.js Development',
       description:
         'Leveraging Next.js framework for building SEO-friendly and high-performance web applications.',
-      icon: <Globe className='w-10 h-10' />,
+      icon: <SiNextdotjs className='w-10 h-10' />,
       features: [
         'Server-side Rendering',
         'Static Site Generation',
@@ -63,7 +63,7 @@ const Services = () => {
       title: 'WordPress Development',
       description:
         'Custom WordPress solutions tailored to your specific business needs.',
-      icon: <Database className='w-10 h-10' />,
+      icon: <FaWordpressSimple className='w-10 h-10' />,
       features: [
         'Custom Themes',
         'Plugin Development',
@@ -75,7 +75,7 @@ const Services = () => {
       title: 'Shopify Development',
       description:
         'Building custom Shopify stores that drive sales and enhance user experience.',
-      icon: <ShoppingCart className='w-10 h-10' />,
+      icon: <FaShopify className='w-10 h-10' />,
       features: [
         'Custom Theme Development',
         'App Integration',
@@ -128,7 +128,7 @@ const Services = () => {
                 </li>
               ))}
             </ul>
-            <button className='w-full'>
+            <button className='px-12 py-2 bg-lime hover:bg-deep-lime rounded-full'>
               Learn More
             </button>
           </motion.div>
