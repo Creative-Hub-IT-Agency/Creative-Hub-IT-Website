@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import {
   Server,
-  Database,
   Layout,
-  ShoppingCart,
 } from 'lucide-react';
 import { FaReact, FaShopify, FaWordpressSimple } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
