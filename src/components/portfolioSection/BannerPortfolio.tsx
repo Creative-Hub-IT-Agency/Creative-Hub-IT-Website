@@ -1,6 +1,4 @@
-import { FaArrowDown } from 'react-icons/fa';
 import FlipWords from './FlipWords';
-import { Link } from 'react-router-dom';
 
 const heroStyles = {
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/banner.webp')`,
@@ -16,7 +14,7 @@ const words = [
   'Troubleshooting, Debugging and Bug Fixing',
 ];
 
-const PortfolioBanner = () => {
+const BannerPortfolio = () => {
   return (
     <div
       id='#home'
@@ -32,13 +30,13 @@ const PortfolioBanner = () => {
             </h1>
             <div className='text-xl md:text-2xl lg:text-3xl font-bold mb-12 '>
               <FlipWords words={words} />
-            </div>        
-              <a
-                href='#portfolio'
-                className='bg-lime uppercase hover:bg-deep-lime hover:bg-opacity-90 transition transform hover:scale-105  text-white hover:lime-light font-medium py-5 px-12 rounded-full cursor-pointer'
-              >
-                Explore More 
-              </a>
+            </div>
+            <a
+              href='#portfolio'
+              className='bg-lime uppercase hover:bg-deep-lime hover:bg-opacity-90 transition transform hover:scale-105  text-white hover:lime-light font-medium py-5 px-12 rounded-full cursor-pointer'
+            >
+              Explore More
+            </a>
           </div>
         </div>
       </div>
@@ -46,4 +44,4 @@ const PortfolioBanner = () => {
   );
 };
 
-export default PortfolioBanner;
+export default BannerPortfolio;

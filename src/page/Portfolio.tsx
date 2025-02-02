@@ -1,5 +1,5 @@
 
-import PortfolioBanner from '../components/portfolioSection/PortfolioBanner';
+import PortfolioBanner from '../components/portfolioSection/BannerPortfolio';
 import AnimatedBanner from '../components/portfolioSection/AnimatedBanner';
 import PortfolioSection from '../components/portfolioSection/PortfolioSection';
 import Consultation from '../components/shared/hero/Consultation';
