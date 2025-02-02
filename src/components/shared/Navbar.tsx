@@ -18,7 +18,7 @@ export const NavLinks = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to='/services' className='hover:text-lime font-medium'>
+        <NavLink to='/' className='hover:text-lime font-medium'>
           Services
         </NavLink>
       </li>
@@ -29,12 +29,12 @@ export const NavLinks = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to='/about' className='hover:text-lime font-medium'>
+        <NavLink to='/' className='hover:text-lime font-medium'>
           about
         </NavLink>
       </li>
       <li>
-        <NavLink to='/our-team' className='hover:text-lime font-medium'>
+        <NavLink to='/' className='hover:text-lime font-medium'>
           our team
         </NavLink>
       </li>
