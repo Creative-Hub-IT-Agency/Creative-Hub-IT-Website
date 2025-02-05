@@ -18,9 +18,9 @@ export const NavLinks = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to='#services' className='hover:text-lime font-medium'>
+        <a href='/#services' className='hover:text-lime font-medium'>
           Services
-        </NavLink>
+        </a>
       </li>
 
       <li>
@@ -29,9 +29,9 @@ export const NavLinks = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to='#about' className='hover:text-lime font-medium'>
+        <a href='/#about' className='hover:text-lime font-medium'>
           about
-        </NavLink>
+        </a>
       </li>
       <li>
         <NavLink to='/' className='hover:text-lime font-medium'>
